@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'codec_warm_trialextrabold';
+    src: url('fonts/codec-warm-extrabold-trial-webfont.woff2') format('woff2'),
+    url('fonts/codec-warm-extrabold-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

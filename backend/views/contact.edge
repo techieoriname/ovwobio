@@ -1,0 +1,50 @@
+@layout('layout.pages')
+@section('content')
+<div class="section-two-blocks mave">
+    <div class="row vertical-row">
+        <div class="col-md-6">
+            <div class="google-map full-screen-size" data-sub-height="125" data-marker-pos-top="50" data-coords="51.525517099999995,-0.058719600000000004"></div>
+        </div>
+        <div class="col-md-6">
+            <div class="content">
+                <div class="title-base title-small text-left" data-anima="show-scale" data-trigger="hover">
+                    <h2>CONTACT US</h2>
+                    <hr class="anima" />
+                </div>
+                <ul class="fa-ul text-s">
+                    <li><i class="fa-li fa fa-home"></i> 19TH & DOLORES ST,SAN FRANCISCO, CA 94114, UNITED STATES</li>
+                    <li><i class="fa-li fa fa-phone"></i> (123) 0 123 455669</li>
+                    <li><i class="fa-li fa fa-envelope"></i> info@construction.com</li>
+                </ul>
+                <hr class="space s" />
+                <form action="http://construction.framework-y.com/scripts/php/contact-form.php" class="form-box form-ajax" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input id="name" name="name" placeholder="Name" type="text" class="form-control form-value" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="email" name="email" placeholder="Email" type="email" class="form-control form-value" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <hr class="space xs" />
+                            <input id="phone" name="phone" placeholder="Phone" type="text" class="form-control form-value">
+                            <hr class="space xs" />
+                            <textarea id="messagge" name="messagge" placeholder="Type your message ..." class="form-control form-value" required></textarea>
+                            <hr class="space s" />
+                            <button class="anima-button circle-button btn-sm btn" type="submit"><i class="fa fa-envelope-o"></i>Send messagge</button>
+                        </div>
+                    </div>
+                    <div class="success-box">
+                        <div class="alert alert-success">Congratulations. Your message has been sent successfully</div>
+                    </div>
+                    <div class="error-box">
+                        <div class="alert alert-warning">Error, please retry. Your message has not been sent</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection

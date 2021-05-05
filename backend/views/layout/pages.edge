@@ -1,0 +1,109 @@
+@include('layout.header')
+<body>
+<div id="preloader"></div>
+<header class="fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top over">
+        <div class="navbar-mini scroll-hide scroll-show-mobile">
+            <div class="container">
+                <div class="nav navbar-nav navbar-left">
+                    <span><i class="fa fa-phone"></i><a href="tel:+2347041350009">+234 704 135 0009</a></span>
+                    <hr/>
+                    <span><i class="fa fa-envelope-o"></i><a
+                            href="mailto:info@ovwobiogcltd.com">info@ovwobiogcltd.com</a></span>
+                </div>
+                <div class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav over lan-menu">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                <img src="images/en.png" alt="flag"/>EN <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><img src="images/it.png" alt="flag"/>IT</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="minisocial-group">
+                        <a target="_blank" href="#"><i class="fa fa-facebook first"></i></a>
+                        <a target="_blank" href="https://twitter.com/ovwobio"><i class="fa fa-twitter"></i></a>
+                        <a target="_blank" href="#"><i class="fa fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/ovwobio-general-contracting-limited/"><i
+                                class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-main middle-box-menu scroll-change mega-menu-fullwidth">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="{{ ctx.route('home') }}"><img src="images/ovwobio_logo.png" class="img-responsive"
+                                                                   alt="Ovwobio General Contracting" width="150"></a>
+                </div>
+                <div class="collapse navbar-collapse" data-menu-anima="fade-in">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="{{ ctx.route('home') }}">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="{{ ctx.route('about') }}">About Us</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="{{ ctx.route('services') }}">Services</a>
+                        </li>
+                        <li class="dropdown mega-dropdown mega-tabs">
+                            <a href="{{ ctx.route('contact') }}">Contact Us </a>
+                        </li>
+                    </ul>
+                    <div class="nav navbar-nav  navbar-right">
+                    </div>
+                </div>
+            </div>
+            <div class="container box-menu-inner scroll-hide scroll-show-mobile">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="icon-box">
+                            <div class="icon-box-cell">
+                                <i class="fa fa-mobile text-xl"></i>
+                            </div>
+                            <div class="icon-box-cell">
+                                <label class="text-m"><a href="tel:+2347041350009">+234 704 135 0009</a></label>
+                                <p class="text-xs">We're on call 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icon-box">
+                            <div class="icon-box-cell">
+                                <i class="fa fa-clock-o text-xl"></i>
+                            </div>
+                            <div class="icon-box-cell">
+                                <label class="text-m">Mon - Fri 8am - 5pm</label>
+                                <p class="text-xs">Operating Hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icon-box">
+                            <div class="icon-box-cell">
+                                <i class="fa fa-envelope-o text-xl"></i>
+                            </div>
+                            <div class="icon-box-cell">
+                                <label class="text-m"><a
+                                        href="mailto:info@ovwobiogcltd.com">info@ovwobiogcltd.com</a></label>
+                                <p class="text-xs">Write To Us</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <a class="btn btn-sm  btn-default" href="{{ ctx.route('contact') }}" data-anima="pulse-vertical"
+                           data-trigger="hover">REQUEST A QUOTE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+@!section('content')
+@include('layout.pages_footer')
